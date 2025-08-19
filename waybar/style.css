@@ -1,0 +1,82 @@
+* {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 14px;
+  color: #cdd6f4;
+  background: transparent;
+}
+
+window#waybar {
+  background-color: rgba(17, 17, 27, 0.7);
+  padding-top: 10px;
+}
+
+#workspaces {
+  background-color: #1e1e2e; 
+  border-radius: 8px;
+  padding: 0px;
+  margin-left: 2px; 
+}
+
+#workspaces button {
+  background-color: transparent; 
+  border-radius: 0px; 
+  margin: 0 0px; 
+  color: #89b4fa;
+  min-width: 25px; 
+  padding-left: 0px; 
+  padding-right: 0px; 
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  padding: 0 5px;
+}
+
+#workspaces button.active {
+  color: #670fd3;
+  border-bottom: 2px solid #670fd3;
+  border-radius: 8px;
+}
+
+#workspaces button:hover {
+    background-color: rgba(103, 15, 211, 0.1); 
+    border-radius: 8px;
+}
+
+#custom-media,
+#custom-notifications,
+#pulseaudio,
+#bluetooth,
+#keyboard-state,
+#clock,
+#tray {
+  background-color: #1e1e2e;
+  border-radius: 8px;
+  margin: 0 4px;
+  padding: 0 10px;
+}
+
+
+#custom-notifications {
+  color: #f2cdcd;
+}
+
+#pulseaudio {
+  color: #f5c2e7;
+}
+
+#bluetooth {
+  color: #94e2d5;
+}
+
+#keyboard-state {
+  color: #89dceb;
+}
+
+#clock {
+  color: #f5c2e7;
+}
+
+tooltip {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border-radius: 8px;
+}

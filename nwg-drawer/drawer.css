@@ -1,0 +1,42 @@
+window {
+    background-color: rgba(30, 30, 46, 0.7); /* Mocha base */
+    color: #cdd6f4; /* text */
+}
+
+/* search entry */
+entry {
+    background-color: rgba(49, 50, 68, 0.3); /* surface0 with transparency */
+}
+
+button, image {
+    background: none;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(205, 214, 244, 0.1); /* light overlay on hover */
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+    margin: 0 10px 0 10px;
+    font-size: larger;
+}
+
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #585b70; /* overlay0 */
+}
+
+#files-box {
+    padding: 5px;
+    border: 1px dotted #585b70;
+    border-radius: 15px;
+}
+
+/* math operation result label */
+#math-label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #f5c2e7; /* pink for highlight */
+}

@@ -1,0 +1,98 @@
+@define-color cc-bg rgba(30, 30, 46, 0.9); /* -> base */
+@define-color noti-border-color rgba(148, 226, 213, 0.5); /* -> teal */
+@define-color noti-bg rgba(24, 24, 37, 0.95); /* -> mantle */
+@define-color noti-bg-opaque rgb(24, 24, 37);
+@define-color noti-bg-darker rgb(17, 17, 27); /* -> crust */
+@define-color noti-bg-hover rgb(49, 50, 68); /* -> surface1 */
+@define-color noti-bg-hover-opaque rgb(49, 50, 68);
+@define-color noti-bg-focus rgba(49, 50, 68, 0.6);
+@define-color noti-close-bg rgba(108, 112, 134, 0.1); /* -> surface2 */
+@define-color noti-close-bg-hover rgba(108, 112, 134, 0.2);
+@define-color text-color rgb(205, 214, 244); /* -> text */
+@define-color text-color-disabled rgb(108, 112, 134); /* -> subtext0 */
+@define-color bg-selected rgb(137, 180, 250); /* -> blue */
+@define-color border-color rgb(148, 226, 213); /* -> teal */
+@define-color highlight-green rgb(166, 227, 161); /* -> green */
+
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Fira Code", monospace;
+  font-size: 14px;
+  color: @text-color;
+  border: none;
+  background: transparent;
+}
+
+window {
+  background-color: @cc-bg;
+}
+
+.notification-row {
+  background-color: @noti-bg;
+  border: 1px solid @noti-border-color;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+}
+
+.notification-row:hover {
+  background-color: @noti-bg-hover;
+}
+
+.notification {
+  padding: 6px;
+}
+
+.notification-title {
+  font-weight: bold;
+}
+
+.notification-body {
+  color: @text-color-disabled;
+}
+
+.control-center-clear-all-button,
+.notification-close-button {
+  background-color: @noti-close-bg;
+  border: 1px solid @highlight-green;
+  color: @highlight-green;
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+.control-center-clear-all-button:hover,
+.notification-close-button:hover {
+  background-color: @noti-close-bg-hover;
+}
+
+
+
+.dnd-button {
+  background-color: @noti-bg-darker;
+  color: @highlight-green;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid @highlight-green;
+}
+
+.dnd-button:checked {
+  background-color: @highlight-green;
+  color: @cc-bg;
+}
+
+.control-center {
+  background-color: @cc-bg;
+  border: 1px solid @border-color;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.widget-title {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+
+.blank-window {
+  background-color: transparent;
+}

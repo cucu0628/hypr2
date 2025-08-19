@@ -1,0 +1,151 @@
+/*
+ * Sötétebb Kék-Lila Mix Téma Nautilushoz
+ * Helyezd a ~/.config/gtk-4.0/gtk.css fájlba
+ * Használd a GTK Inspectort (Ctrl+Shift+D vagy Ctrl+Shift+I) a szelektorok finomításához!
+ */
+
+/* Nautilus ablak alapstílusa */
+.nautilus-window {
+  background-color: #2B283B; /* Sötét, enyhén lilás-kék alap háttér */
+  color: #EAEAEA;            /* Világos alapszöveg */
+}
+
+/* --- Oldalsáv stílusa --- */
+.nautilus-window .navigation-sidebar,
+.nautilus-window .nautilus-places-sidebar {
+  background-color: #362F4E; /* Sötét lila az oldalsávnak */
+  color: #D8D8D8;            /* Világosabb szöveg az oldalsávon */
+  border-right: 1px solid #4A4564; /* Finom elválasztó vonal */
+}
+
+/* Oldalsáv elemek (sorok) */
+.nautilus-window .navigation-sidebar row,
+.nautilus-window .nautilus-places-sidebar row {
+  color: #E0E0E0; /* Biztosítja a világos szöveget */
+  padding-top: 5px;    /* Kis extra tér */
+  padding-bottom: 5px; /* Kis extra tér */
+}
+
+/* Oldalsáv elemek fölé vitt egér (hover) */
+.nautilus-window .navigation-sidebar row:hover,
+.nautilus-window .nautilus-places-sidebar row:hover {
+  background-color: #4F4670; /* Világosabb/telítettebb lila hover esetén */
+}
+
+/* Kiválasztott elem az oldalsávban */
+.nautilus-window .navigation-sidebar row:selected,
+.nautilus-window .nautilus-places-sidebar row:selected {
+  background-color: #6A5ACD; /* Élénkebb lila (SlateBlue) a kiválasztáshoz */
+  color: #FFFFFF;            /* Fehér szöveg a kiválasztott elemen */
+}
+
+/* Kiválasztott elem az oldalsávban, ha az ablak nem fókuszált (backdrop) */
+.nautilus-window .navigation-sidebar row:selected:backdrop,
+.nautilus-window .nautilus-places-sidebar row:selected:backdrop {
+  background-color: #5A4AB0; /* Kevésbé élénk lila */
+  color: #E0E0E0;
+}
+
+/* --- Fő nézet (ikonok/lista) stílusa --- */
+.nautilus-window .view,
+.nautilus-window .nautilus-canvas-item,
+.nautilus-window treeview.view, /* Lista nézet */
+.nautilus-window flowbox.view,  /* Ikon nézet */
+.nautilus-window listview.view { /* GTK4 lista nézet */
+  background-color: #2B283B; /* Ablak hátterével megegyező, vagy enyhén eltérő */
+  color: #EAEAEA;            /* Alap szövegszín az elemeknek */
+}
+
+/* Fájlok/mappák neveinek színe a fő nézetben */
+.nautilus-window .nautilus-canvas-item label,
+.nautilus-window .view text,
+.nautilus-window treeview.view text,
+.nautilus-window flowboxchild label,
+.nautilus-window listview row text {
+  color: #EAEAEA;
+}
+
+/* Kiválasztott elemek a fő nézetben */
+.nautilus-window .nautilus-canvas-item:selected,
+.nautilus-window treeview.view text:selected,
+.nautilus-window treeview.view image:selected,
+.nautilus-window flowboxchild:selected,
+.nautilus-window listview row:selected {
+  background-color: #4A6EAF; /* Közepesen sötét, acélos kék a kiválasztáshoz */
+  color: #FFFFFF;            /* Fehér szöveg */
+}
+
+/* Kiválasztott elemek a fő nézetben, ha az ablak nem fókuszált (backdrop) */
+.nautilus-window .nautilus-canvas-item:selected:backdrop,
+.nautilus-window treeview.view text:selected:backdrop,
+.nautilus-window treeview.view image:selected:backdrop,
+.nautilus-window flowboxchild:selected:backdrop,
+.nautilus-window listview row:selected:backdrop {
+  background-color: #405D8B; /* Tompább kék */
+  color: #D0D0D0;
+}
+
+
+/* --- Elérési út (Path bar / Breadcrumbs) --- */
+.nautilus-window .pathbar button,
+.nautilus-window headerbar .pathbar button {
+  background-image: none;
+  background-color: #3D4E75; /* Sötétebb kék az elérési út gombjainak */
+  color: #E0E0E0;
+  border: none;
+  box-shadow: none;
+  padding: 5px 10px;
+  margin: 2px 1px;
+  border-radius: 4px;
+}
+
+.nautilus-window .pathbar button:hover,
+.nautilus-window headerbar .pathbar button:hover {
+  background-color: #4C6492; /* Világosabb kék hover esetén */
+}
+
+.nautilus-window .pathbar button:active,
+.nautilus-window headerbar .pathbar button:active,
+.nautilus-window .pathbar button:checked, /* Aktuális mappa */
+.nautilus-window headerbar .pathbar button:checked {
+  background-color: #6A5ACD; /* Lila kiemelés az aktív/aktuális elérési út gombon */
+  color: #FFFFFF;
+}
+
+
+/* --- Fejléc (Headerbar) --- */
+.nautilus-window headerbar.header-bar {
+  background-color: #211F30; /* Nagyon sötét, majdnem fekete lila a fejlécnek */
+  border-bottom: 1px solid #362F4E;
+  color: #EAEAEA;
+}
+
+.nautilus-window headerbar.header-bar button {
+  color: #EAEAEA;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+
+.nautilus-window headerbar.header-bar button:hover {
+  background-color: #362F4E; /* Oldalsáv színével megegyező hover */
+}
+
+/* Ha a címkék (tabok) is sötétek legyenek */
+.nautilus-window .notebook tab {
+  background-color: #362F4E;
+  color: #D0D0D0;
+}
+
+.nautilus-window .notebook tab:checked { /* Aktív fül */
+  background-color: #4F4670; /* Az oldalsáv hover színével */
+  color: #FFFFFF;
+}
+
+/* Inaktív ablak stílusai (általánosabb) */
+.nautilus-window:backdrop {
+  color: #AAAAAA; /* Tompább szövegszín, ha az ablak inaktív */
+}
+
+.nautilus-window headerbar.header-bar:backdrop {
+  background-color: #252331; /* Kicsit tompább fejléc háttér, ha inaktív */
+}
