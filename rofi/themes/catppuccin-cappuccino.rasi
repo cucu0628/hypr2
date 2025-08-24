@@ -1,0 +1,67 @@
+* {
+  font: "Fira Code Nerd Font 12";
+  background-color: #1e1e2e; /* Fekete háttér */
+  color: #f5e0dc;            /* Világos krémes szöveg */
+  selected-background-color: #d9b8f2; /* Pasztell lila háttér a kiválasztott elemnek */
+  selected-color: #1e1e2e;    /* Kiválasztott elem szövegszíne: sötét */
+  border-color: #f9e2af;      /* Világosbarna szegély */
+  border-radius: 10px;        /* Lekerekített sarkok */
+  padding: 6px 12px;
+  margin: 6px;
+  spacing: 4px;
+}
+
+window {
+  background-color: #1e1e2e; /* Fekete háttér az ablaknak */
+  border-width: 2px;
+  
+  border-color: #f9e2af;    /* Világosbarna szegély */
+  border-radius: 10px;        /* Lekerekített sarkok */
+}
+
+mainbox {
+  background-color: transparent; /* Átlátszó háttér */
+}
+
+listview {
+  lines: 10;
+  fixed-height: false;
+  scrollbar: true;
+  padding: 10px;
+  border-width: 0;
+}
+
+element {
+  border-width: 0;
+  padding: 4px;
+  background-color: transparent;
+  color: #f5e0dc;            /* Krém színű szöveg */
+}
+
+element selected {
+  background-color: #d9b8f2; /* Kiválasztott elem háttér színe */
+  color: #1e1e2e;            /* Kiválasztott szöveg színe */
+}
+
+element alternate {
+  background-color: #2a2a3c; /* Alternatív elem háttér színe */
+}
+
+inputbar {
+  background-color: #2a2a3c; /* Inputbar háttér */
+  border-radius: 10px;
+  padding: 6px;
+}
+
+entry {
+  background-color: transparent; /* Átlátszó háttér az inputnál */
+  color: #f5e0dc;            /* Krém színű szöveg */
+}
+
+prompt {
+  color: #fab387;            /* Sárga prompt szín */
+  padding-top: 0;
+  padding-right: 8px;
+  padding-bottom: 0;
+  padding-left: 8px;
+}

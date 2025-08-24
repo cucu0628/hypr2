@@ -1,0 +1,65 @@
+* {
+    font: "MesloLGS NF 18";  /* Növeltük a betűméretet */
+    text-color: #c0caf5;
+    background-color: rgba(10, 10, 20, 0.95);
+    border-color: #7aa2f7;
+    border-radius: 10px;  /* Növeltük a kerekítést */
+}
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    columns: 2;
+    icon-size: 22;  /* Növeltük az ikon méretét */
+}
+
+window {
+    background-color: @background-color;
+    border: 2;
+    border-color: @border-color;
+    padding: 30px;  /* Növeltük a belső térközt */
+    width: 800px;  /* Szélesebbre állítottuk */
+    height: 600px;  /* Magasabbra állítottuk */
+    max-height: 600px;
+}
+
+mainbox {
+    padding: 15px;
+    children: [inputbar, listview];
+    spacing: 15px;  /* Növeltük a távolságot */
+}
+
+inputbar {
+    background-color: rgba(20, 20, 40, 0.9);
+    border: 1;
+    border-color: #7dcfff;
+    border-radius: 10px;  /* Növeltük a kerekítést */
+    padding: 12px;  /* Több helyet hagyunk a kereső sáv körül */
+    children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+listview {
+    lines: 8;  /* Több sor jelenik meg */
+    spacing: 15px;  /* Több hely a sorok között */
+    fixed-height: false;
+    border: 0;
+    columns: 2;
+}
+
+element {
+    padding: 20px;  /* Növeltük a padding-ot */
+    border-radius: 12px;  /* Nagyobb kerekítés */
+    height: 80px;  /* Magasabb elemek */
+    min-width: 200px;  /* Szélesebb elemek */
+    text-align: center;  /* Középre igazítjuk */
+    font-size: 20px;  /* Növeltük az ikon és szöveg méretét */
+}
+
+element selected {
+    background-color: rgba(255, 121, 198, 0.2);
+    text-color: #ff79c6;
+}
+
+element-text {
+    text-color: inherit;
+}

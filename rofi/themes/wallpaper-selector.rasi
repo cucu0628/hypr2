@@ -1,0 +1,55 @@
+/*
+ * Rofi Theme for Wallpaper Selector
+ */
+
+* {
+    background-color:   rgba(30, 30, 46, 0.9);
+    text-color:         #cdd6f4;
+    font:               "JetBrainsMono Nerd Font 12";
+    border-radius:      15px;
+}
+
+window {
+    width: 80%;
+    height: 80%;
+    border: 2px;
+    border-color: #45475a;
+    padding: 30px;
+}
+
+mainbox {
+    children: [ listview ];
+    spacing: 20px;
+}
+
+listview {
+    columns: 4;
+    lines: 2;
+    layout: vertical;
+    spacing: 20px;
+}
+
+element {
+    orientation: vertical;
+    padding: 20px;
+    border: 1px;
+    border-color: #313244;
+    border-radius: 10px;
+    background-color: rgba(49, 50, 68, 0.5);
+}
+
+element-icon {
+    size: 15em;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    margin: 10px 0 0 0;
+}
+
+element.selected {
+    background-color: #45475a;
+    text-color: #b4befe;
+    border-color: #b4befe;
+}

@@ -1,0 +1,71 @@
+/*
+ * Rofi theme based on Waybar style
+ */
+
+* {
+    background-color:   rgba(30, 30, 46, 0.9);
+    text-color:         #cdd6f4;
+    font:               "JetBrainsMono Nerd Font 16";
+    border-radius:      15px;
+}
+
+window {
+    width: 45%;
+    border: 2px;
+    border-color: #45475a;
+    padding: 30px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 30px; /* Increased spacing */
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: #313244;
+}
+
+prompt {
+    text-color: #a6e3a1;
+    margin: 0 1em 0 0; /* Add margin to the right of the prompt */
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: #6c7086;
+}
+
+listview {
+    lines: 3;
+    columns: 1; /* Changed to 1 column for horizontal layout */
+    layout: vertical;
+    spacing: 15px;
+}
+
+element {
+    padding: 15px;
+    orientation: horizontal; /* Changed to horizontal orientation */
+    border: 1px;
+    border-color: #313244;
+    border-radius: 10px;
+    background-color: rgba(49, 50, 68, 0.5);
+}
+
+element-icon {
+    size: 2em; /* Adjusted icon size */
+    margin: 0 1em 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+element.selected {
+    background-color: #45475a;
+    text-color: #b4befe;
+    border-color: #b4befe;
+}
