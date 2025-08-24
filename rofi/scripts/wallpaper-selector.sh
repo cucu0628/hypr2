@@ -10,7 +10,7 @@ if [ ! -d "$WALLPAPER_DIR" ]; then
 fi
 
 # Rofi command
-rofi_command="rofi -dmenu -i -p 'Select Wallpaper' -theme /home/asked/.config/rofi/themes/wallpaper-selector.rasi"
+rofi_command="rofi -dmenu -i -p 'Select Wallpaper' -theme ~/.config/rofi/themes/wallpaper-selector.rasi"
 
 # Get the list of wallpapers
 wallpapers=()
